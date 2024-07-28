@@ -1,22 +1,20 @@
-
 #include <stdio.h>
 
 int main() {
-    int n, i, sum = 0;
+    int num1, num2, sum, difference, product, quotient;
 
-    printf("Enter an integer: ");
-    scanf("%d", &n);
+    printf("Enter two integers: ");
+    scanf("%d %d", &num1, &num2);
 
-    if (n <= 0) {
-        printf("Invalid input. Please enter a positive integer.\n");
-        return 1;
-    }
+    sum = num1 + num2;
+    difference = num1 - num2;
+    product = num1 * num2;
+    quotient = num1 / num2;
 
-    for (i = 1; i <= n; ++i) {
-        sum += i;
-    }
-
-    printf("The sum of numbers from 1 to %d is: %d\n", n, sum);
+    printf("%d + %d = %d\n", num1, num2, sum);
+    printf("%d - %d = %d\n", num1, num2, difference);
+    printf("%d * %d = %d\n", num1, num2, product);
+    printf("%d / %d = %d\n", num1, num2, quotient);
 
     return 0;
 }
